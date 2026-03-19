@@ -4,32 +4,32 @@
     <!-- Google Tag Manager -->
     <!-- Load GTM-P3WXFWCW immediately on page load  -->
     <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-P3WXFWCW');
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-P3WXFWCW');
     </script>
     <!-- Load GTM-W8WD8WN on user interaction -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const events = ["mousemove", "scroll", "keydown", "touchstart"];
-            function loadGTM() {
-                events.forEach(event => document.removeEventListener(event, loadGTM));
-                (function (w, d, s, l, i) {
-                    w[l] = w[l] || []; w[l].push({
-                        'gtm.start':
-                            new Date().getTime(), event: 'gtm.js'
-                    }); var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-                })(window, document, 'script', 'dataLayer', 'GTM-W8WD8WN');
-            }
-            events.forEach(event => document.addEventListener(event, loadGTM, { once: true }));
-        });
+            document.addEventListener("DOMContentLoaded", function () {
+                const events = ["mousemove", "scroll", "keydown", "touchstart"];
+                function loadGTM() {
+                    events.forEach(event => document.removeEventListener(event, loadGTM));
+                    (function (w, d, s, l, i) {
+                        w[l] = w[l] || []; w[l].push({
+                            'gtm.start':
+                                new Date().getTime(), event: 'gtm.js'
+                        }); var f = d.getElementsByTagName(s)[0],
+                            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                    })(window, document, 'script', 'dataLayer', 'GTM-W8WD8WN');
+                }
+                events.forEach(event => document.addEventListener(event, loadGTM, { once: true }));
+            });
     </script>
     <title>Essential JS 2 for ASP.NET Core - Story Estimator</title>
     <meta charset="utf-8" />
@@ -41,12 +41,11 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet" />
-    <link href="~/css/fonts.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://ej2aspnetcore-staging.azurewebsites.net/showcase/aspnetcore/story-estimator/dist/cssminify/ej2.min.css?v=J5H0Z_xjHw5uvrBfeyLQonHKZOe-uf76QL5xE3p2tl0">
-    <link rel="stylesheet" href="https://ej2aspnetcore-staging.azurewebsites.net/showcase/aspnetcore/story-estimator/dist/cssminify/site.min.css?v=_P_gkVlacSDIFdsVMLWtheVmI7kDgNzw6NpjSFSfZK0">
-    <link rel="stylesheet" href="https://ej2aspnetcore-staging.azurewebsites.net/showcase/aspnetcore/story-estimator/dist/cssminify/dashboard.min.css?v=zSJyfcb_OXlf4s7FXJkHJtz0vnuUbEJf5BLqerARHxc">
-    <link rel="stylesheet" href="https://ej2aspnetcore-staging.azurewebsites.net/showcase/aspnetcore/story-estimator/dist/cssminify/play.min.css?v=hMZo9qHxE0uOzZwpcz-_NkKtSQq1-8509GvrGrIvcEw">
-    <link rel="stylesheet" href="https://ej2aspnetcore-staging.azurewebsites.net/showcase/aspnetcore/story-estimator/dist/cssminify/about.min.css?v=d8ZgUW7vi8ipBUzY4Utbg-ujBLI_Qwr7YnUIOguoDj8">
+    <link rel="stylesheet" href="~/dist/cssminify/ej2.min.css">
+    <link rel="stylesheet" href="~/dist/cssminify/site.min.css">
+    <link rel="stylesheet" href="~/dist/cssminify/dashboard.min.css">
+    <link rel="stylesheet" href="~/dist/cssminify/play.min.css">
+    <link rel="stylesheet" href="~/dist/cssminify/about.min.css">
     <environment names="Development">
         <link href="~/css/ej2/ej2-notifications.css" rel="stylesheet" />
         <link href="~/css/ej2/material.css" rel="stylesheet" />
@@ -73,7 +72,7 @@
     </environment>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-    <link href="https://cdn.syncfusion.com/ej2/31.1.17/material.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.syncfusion.com/ej2/33.1.44/material.css" rel="stylesheet" type="text/css">
 
     <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>
@@ -84,14 +83,14 @@
     <script src="~/js/crossroads.js"></script>
     <script src="~/js/hasher.min.js"></script>
     <script src="~/js/common.data.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/31.1.17/dist/ej2.min.js"></script>
+    <script src="https://cdn.syncfusion.com/ej2/33.1.44/dist/ej2.min.js"></script>
     <script src="~/js/timer.jquery.js"></script>
     <script src="~/js/signalr.min.js"></script>
     <script src="~/js/jquery.qrcode.js"></script>
     <script src="~/js/qrcode.js"></script>
     <script type="text/javascript">
         if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
-            document.write('<script src="js/bluebird.min.js"><\/script>');
+        document.write('<script src="js/bluebird.min.js"><\/script>');
         }
     </script>
     <environment names="Development">
